@@ -16,9 +16,9 @@
       <tr>
         <td><%= studen.name %></td>
         <td><%= studen.age %></td>
-        <td><%= link_to 'Show', studen %></td>
-        <td><%= link_to 'Edit', edit_studen_path(studen) %></td>
-        <td><%= link_to 'Destroy', studen, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', studen, class: 'btn btn btn-outline-primary' %></td>
+        <td><%= link_to 'Edit', edit_studen_path(studen), class: 'btn btn btn-outline-primary' %></td>
+        <td><%= link_to 'Destroy', studen, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn btn-outline-primary' %></td>
       </tr>
     <% end %>
   </tbody>
